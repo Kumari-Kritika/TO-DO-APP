@@ -1,0 +1,141 @@
+/* General container styling */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light blue background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Heading styling */
+h1 {
+    color: #00796b;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Task form styling */
+#task-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Task input styling */
+#task-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #00796b;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+}
+
+/* Button styling */
+#task-form button {
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#task-form button:hover {
+    background-color: #004d40; /* Darker shade on hover */
+}
+
+/* Task list styling */
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Task item styling */
+.task-item {
+    background-color: #f9fbe7;
+    padding: 15px;
+    border: 1px solid #cddc39;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+/* Task item hover effect */
+.task-item:hover {
+    transform: scale(1.02);
+}
+
+/* Task item text when completed */
+.task-item.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Task item buttons */
+.task-item button {
+    background-color: #ff5252;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+/* Mark completed button styling */
+.task-item .mark-completed {
+    background-color: #4caf50;
+}
+
+/* Button hover effects */
+.task-item button:hover {
+    background-color: #d32f2f; /* Darker red on hover for delete button */
+}
+
+.task-item .mark-completed:hover {
+    background-color: #388e3c; /* Darker green for mark completed */
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 600px) {
+    #task-form {
+        flex-direction: column;
+    }
+
+    #task-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #task-form button {
+        width: 100%;
+    }
+}
